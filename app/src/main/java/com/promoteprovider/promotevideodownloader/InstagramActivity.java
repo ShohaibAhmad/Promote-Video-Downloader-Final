@@ -15,6 +15,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 
 import com.promoteprovider.promotevideodownloader.databinding.ActivityInstagramBinding;
+import com.startapp.sdk.adsbase.StartAppAd;
 
 
 public class InstagramActivity extends AppCompatActivity {
@@ -26,6 +27,7 @@ public class InstagramActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding = DataBindingUtil.setContentView(this,R.layout.activity_instagram);
         binding.Download.setOnClickListener(view -> {
+            StartAppAd.showAd(InstagramActivity.this);
             String getUrl = binding.InstaUrl.getText().toString();
             DownloadManager.Request request = new DownloadManager.Request(Uri.parse(getUrl));
             String title = URLUtil.guessFileName(getUrl,null,null);

@@ -7,6 +7,7 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 
 import com.promoteprovider.promotevideodownloader.databinding.ActivityShareChatBinding;
+import com.startapp.sdk.adsbase.StartAppAd;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
@@ -24,6 +25,7 @@ public class ShareChatActivity extends AppCompatActivity {
         binding = DataBindingUtil.setContentView(this,R.layout.activity_share_chat);
         binding.Download.setOnClickListener(view -> {
             getShareChatData();
+            StartAppAd.showAd(ShareChatActivity.this);
         });
     }
 

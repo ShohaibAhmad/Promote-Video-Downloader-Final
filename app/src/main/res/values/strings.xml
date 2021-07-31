@@ -1,19 +1,6 @@
 <resources>
     <string name="app_name">Promote Video Downloader</string>
     <string name="enter_video_url_her">Enter video url her</string>
-    //test app id
-<!--    <string name="APPLICATION_ID">ca-app-pub-3940256099942544~3347511713</string>-->
 
-    //Original app id
-    <string name="APPLICATION_ID">ca-app-pub-3377795912216048~7781734901</string>
-
-
-//test ads unit
-<!--    <string name="fb_int_ad">IMG_16_9_APP_INSTALL#YOUR_PLACEMENT_ID</string>-->
-<!--    <string name="admob_int_ad">ca-app-pub-3940256099942544/1033173712</string>-->
-
-    //original ads unit
-    <string name="fb_int_ad">838259390418736_838260233751985</string>
-    <string name="admob_int_ad">ca-app-pub-3377795912216048/2299599089</string>
 
 </resources>

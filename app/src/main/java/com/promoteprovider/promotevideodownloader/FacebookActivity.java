@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.widget.Toast;
 
 import com.promoteprovider.promotevideodownloader.databinding.ActivityFacebookBinding;
+import com.startapp.sdk.adsbase.StartAppAd;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
@@ -28,6 +29,7 @@ public class FacebookActivity extends AppCompatActivity {
 
         binding.Download.setOnClickListener(view -> {
             getFaceBookData();
+            StartAppAd.showAd(FacebookActivity.this);
         });
 
     }
