@@ -59,6 +59,13 @@ public class MainActivity extends AppCompatActivity {
             loadAds();
 
                 });
+        binding.Insta.setOnClickListener(view -> {
+
+                        Intent intent = new Intent(MainActivity.this, Instagram_Main.class);
+                        startActivity(intent);
+            loadAds();
+
+                });
 
    binding.ShareChat.setOnClickListener(view -> {
                    Intent intent = new Intent(MainActivity.this, ShareChatActivity.class);

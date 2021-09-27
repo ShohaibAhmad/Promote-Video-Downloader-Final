@@ -6,7 +6,7 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.BLUETOOTH" />
 
@@ -20,29 +20,39 @@
         android:theme="@style/Theme.PromoteStatusSaver"
         tools:ignore="AllowBackup"
         tools:targetApi="n">
-        <activity android:name="com.promoteprovider.promotevideodownloader.Policy">
-
-        </activity>
-        <activity android:name="com.promoteprovider.promotevideodownloader.About" />
-        <activity android:name="com.promoteprovider.promotevideodownloader.SplashActivity"
-            android:screenOrientation="portrait"
-            >
+        <activity
+            android:name=".Instagram_Main"
+            android:exported="true" />
+        <activity android:name=".Policy"></activity>
+        <activity android:name=".About" />
+        <activity
+            android:name=".SplashActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.promoteprovider.promotevideodownloader.InstagramActivity"    android:screenOrientation="portrait"/>
-        <activity android:name="com.promoteprovider.promotevideodownloader.FacebookActivity"    android:screenOrientation="portrait"/>
-        <activity android:name="com.promoteprovider.promotevideodownloader.WhatsUpActivity"    android:screenOrientation="portrait"/>
-        <activity android:name="com.promoteprovider.promotevideodownloader.ShareChatActivity"   android:screenOrientation="portrait" />
-        <activity android:name="com.promoteprovider.promotevideodownloader.MainActivity"
-            android:screenOrientation="portrait"
-            />
+        <activity
+            android:name=".InstagramActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FacebookActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".WhatsUpActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ShareChatActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait" />
+
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
-            android:value="ca-app-pub-3940256099942544~3347511713"/>
+            android:value="ca-app-pub-3940256099942544~3347511713" />
     </application>
 
 </manifest>
